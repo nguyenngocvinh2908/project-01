@@ -56,9 +56,10 @@ a {
 
 .hero-wrap {
     background: #E6F0FF;
-    height: 100vh;
+    height: calc(100vh - 90px);
     position: relative;
 }
+
 
 .navbar {
     display: flex;
@@ -95,6 +96,10 @@ a {
     color: var(--primary-color);
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+.navbar .action-link:hover {
+    opacity: 0.6;
 }
 
 .navbar .action-btn {
