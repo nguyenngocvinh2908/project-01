@@ -58,6 +58,9 @@ a {
 }
 
 .hero-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: #E6F0FF;
     height: calc(100vh - 90px);
     position: relative;
@@ -116,11 +119,7 @@ a {
     height: 371px;
 }
 
-.hero {
-    padding-top: 130px;
-}
-
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
@@ -128,14 +127,14 @@ a {
     letter-spacing: 0.018em;
 }
 
-.hero .title {
+.hero-wrap .title {
     color: #000336;
     font-size: 6.2rem;
     font-weight: 700;
     line-height: 1.19; /* 118.75% */
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     color: #5A6473;
     font-size: 1.8rem;
@@ -144,12 +143,12 @@ a {
     text-transform: capitalize;
 }
 
-.hero .hero-cta {
+.hero-wrap .hero-cta {
     margin-top: 40px;
     min-width: 170px;
 }
 
-.hero img {
+.hero-wrap img {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
